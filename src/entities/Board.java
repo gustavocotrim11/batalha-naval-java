@@ -61,20 +61,20 @@ public class Board {
             if (thereShip) {
                 if (this.getBoardMatrixPoint(i, j) == 'N' || this.getBoardMatrixPoint(i, j) == 'n') {
                     this.ships--;
-                    System.out.println("Acertou!");
+                    System.out.println("No alvo!");
                     return 'X';
                 } else {
-                    System.out.println("Errou...");
+                    System.out.println("Tiro errado...");
                     return 'n';
                 }
             } else {
                 if (this.getBoardMatrixPoint(i, j) == 'N'  || this.getBoardMatrixPoint(i, j) == 'n') {
                     this.ships--;
-                    System.out.println("Acertou!");
+                    System.out.println("No alvo!");
                     return '*';
 
                 } else {
-                    System.out.println("Errou...");
+                    System.out.println("Tiro errado...");
                     return '-';
                 }
             }
